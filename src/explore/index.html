@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Parcel Home Page</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			href="https://js.arcgis.com/4.25/@arcgis/core/assets/esri/themes/light/main.css"
+			class="esri-light"
+			rel="preload stylesheet"
+			as="style"
+			type="text/css"
+		/>
+		<script type="module" src="app.js"></script>
+	</head>
+	<body>
+		<h1>Hello Explorer!</h1>
+		<div id="mapDiv"></div>
+
+		<picture>
+			<source
+				type="image/webp"
+				srcset="image.png?as=webp&width=400, image.png?as=webp&width=800 2x"
+			/>
+			<source
+				type="image/png"
+				srcset="image.png?width=400, image.png?width=800 2x"
+			/>
+			<img src="image.png?width=400" width="400" />
+		</picture>
+	</body>
+</html>
